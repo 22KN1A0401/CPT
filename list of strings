@@ -1,0 +1,4 @@
+# List of strings
+s=['cat','dog','fish','donkey']
+for i in s:
+    print(i)
