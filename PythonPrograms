@@ -262,3 +262,116 @@ O/p:enter size: 5
 * * 
 * 
 
+#pattern 13: Pyramid
+n=int(input("enter size:"))
+for i in range(1,n+1):
+    for s in range(n-i):
+        print(" ",end=" ")
+    for ss in range(2*i-1):
+        print("*",end=" ")
+    print()
+O/p:
+enter size: 5
+        * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+* * * * * * * * * 
+
+#Pattern 14: Pascal Triangle
+n=int(input("enter size:"))
+for i in range(n):
+    for s in range(n-i-1):
+        print(" ",end=" ")
+    num=1
+    for j in range(i+1):
+        print(f"{num}  ",end=' ')
+        num=num*(i-j)//(j+1)
+    print()
+O/p:
+enter size: 5
+        1   
+      1   1   
+    1   2   1   
+  1   3   3   1   
+1   4   6   4   1   
+
+
+#Pattern 15:floyd's Triangle
+n=int(input("enter size:"))
+p=1
+for i in range(1,n):
+    for j in range(1,i+1):
+        print(p,end=" ")
+        p+=1
+    print()
+
+O/p:
+enter size: 5
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+
+#Pattern 16:
+n=int(input("enter size:"))
+for i in range(1,n+1):
+    print(" "*(n-i),end=" ")
+    for j in range(i):
+        print("*",end=" ")
+    print()
+O/p:
+enter size: 5
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+
+#pattern 17:
+n=int(input("enter size:"))
+for i in range(1,n+1):
+    print('  '*(n-i),end=' ')
+    for j in range(i):
+        print("*",end=' ')
+    print()
+for i in range(n-1,0,-1):
+    print('  '*(n-i),end=' ')
+    for j in range(i):
+        print("*",end=' ')
+    print()
+
+O/p:enter size: 5
+         * 
+       * * 
+     * * * 
+   * * * * 
+ * * * * * 
+   * * * * 
+     * * * 
+       * * 
+         * 
+
+#Pattern 18:Rhombus
+n=int(input("enter size:"))
+for i in range(1,n+1):
+    print('  '*(n-i),end=' ')
+    for j in range(i):
+        print(" * ",end=' ')
+    print()
+for i in range(n-1,0,-1):
+    print('  '*(n-i),end=' ')
+    for j in range(i):
+        print(" * ",end=' ')
+    print()
+O/p:
+enter size: 5
+          *  
+        *   *  
+      *   *   *  
+    *   *   *   *  
+  *   *   *   *   *  
+    *   *   *   *  
+      *   *   *  
+        *   *  
+          * 
