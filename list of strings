@@ -50,6 +50,215 @@ for days in range(1,mdays+1):
     if (sday+days)%7==0:
         print("   ")
 
+#pattern1
+n=int(input("enter size:"))
+for i in range(1,n+1):
+    print("*"*i)
+o/p:enter size: 5
+*
+**
+***
+****
+*****
+
+#pattern2:
+n=int(input("enter size:"))
+for i in range(n+1):
+    print("*"*n)
+    n-=1
+o/p:
+enter size: 5
+*****
+****
+***
+**
+*
+#pattern2 using 2 loops
+n=int(input("enter size:"))
+for i in range(n):
+    for j in range(n-i):
+        print("*",end=" ")
+    print()
+O/p:enter size: 5
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
 
 
+#pattern3
+n=int(input("enter size:"))
+for i in range(n):
+    print("* "*n)
+o/p:enter size: 5
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+* * * * * 
+
+
+#pattern4:Hollow Square
+n=int(input("enter size:"))
+for i in range(n):
+    for j in range(n):
+        if i==0 or i==n-1 or j==0 or j==n-1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+o/p:
+enter size: 5
+* * * * * 
+*       * 
+*       * 
+*       * 
+* * * * * 
+
+#pattern 5: N:
+n=int(input("enter size:"))
+for i in range(n):
+    for j in range(n):
+        if j==0 or i==j or j==n-1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+O/p:
+*       * 
+* *     * 
+*   *   * 
+*     * * 
+*       * 
+
+#Pattern 6:Square with Diagonals
+n=int(input("enter size:"))
+for i in range(n):
+    for j in range(n):
+        if j==0 or i==j or j==n-1 or i+j==n-1 or i==0 or i==n-1:
+            print("*",end=" ")
+            
+        else:
+            print(" ",end=" ")
+    print()
+O/p:
+enter size: 7
+* * * * * * * 
+* *       * * 
+*   *   *   * 
+*     *     * 
+*   *   *   * 
+* *       * * 
+* * * * * * * 
+
+#pattern 7:text
+text=input("enter text:")
+l=len(text)
+for i in range(l):
+    for j in range(i+1):
+        print(text[j],end=" ")
+    print()
+O/p:
+enter text: Cool
+C 
+C o 
+C o o 
+C o o l 
+
+#pattern 8:X
+n=int(input("enter size:"))
+for i in range(n):
+    for j in range(n):
+        if i==j or i+j==n-1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+O/p:enter size: 7
+*           * 
+  *       *   
+    *   *     
+      *       
+    *   *     
+  *       *   
+*           * 
+
+#Pattern 9:hour glass
+n=int(input("enter size:"))
+for i in range(n):
+    for j in range(n):
+        if i==0 or i==j or i+j==n-1 or i==n-1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+O/p:enter size: 7
+* * * * * * * 
+  *       *   
+    *   *     
+      *       
+    *   *     
+  *       *   
+* * * * * * * 
+
+#Pattern 10: butterfly Structure
+n=int(input("enter size:"))
+for i in range(n):
+    for j in range(n):
+        if j==0 or i==j or i+j==n-1 or j==n-1:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+
+O/p:enter size: 7
+*           * 
+* *       * * 
+*   *   *   * 
+*     *     * 
+*   *   *   * 
+* *       * * 
+*           * 
+
+#Pattren 11:
+n=int(input("enter size:"))
+for i in range(1,n+1):
+    print("* "*i)  
+print("* "*(n+1))
+for i in range(n):
+    print("* "*n)
+    n-=1
+enter size: 5
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+#Pattern 12:
+n=int(input("enter size:"))
+
+for i in range(1,n+1):
+    print("* "*i)  
+
+for i in range(n):
+    print("* "*n)
+    n-=1
+O/p:enter size: 5
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
 
