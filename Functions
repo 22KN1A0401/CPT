@@ -1,1 +1,116 @@
+#p1:User Defined Function
+def hi():
+    print("Hello mates.....!")
+hi()
+O/P:Hello mates.....!
+
+# p2:User Defined Function with args
+def summate(x,y):
+    print("Sum = ",x+y)
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+summate(a,b) 
+O/P:
+enter the value of a: 12
+enter the value of b: 8
+Sum =  20
+
+#p3:user Defined Function with args and return values
+def summate(x,y):
+    result=x+y
+    return result
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+print(summate(a,b))
+O/P:
+enter the value of a: 12
+enter the value of b: 8
+20
+
+##p4: functions with default Argument
+def power(base,expo=2):
+    print(base**expo)
+num=int(input("enter the base:"))
+print(power(num))
+print(power(num,3))
+O/P:enter the base: 12
+144
+1728
+
+#p5:Mmultiple return values from a single statement
+def oper(a,b):
+    return a+b,a-b,a*b
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+x,y,z=oper(a,b)
+print("sum:",x)
+print("difference:",y)
+print("product:",z)
+O/P:
+enter the value of a: 12
+enter the value of b: 2
+sum: 14
+difference: 10
+product: 24
+
+#p6:#Anonumous Function lambda
+# lambda var:oper
+num=int(input("enter the value of num:"))
+square=lambda num:num*num
+print(square(num))
+O/P:
+enter the value of num: 12
+144
+
+#p7:#Nested functions(Caller and callee function name should be same and should be in the same indentation)
+def hi():
+    def hello():
+        print("Inner Function")
+    print("Outer Function")
+    hello()
+hi()
+O/P:
+Outer Function
+Inner Function
+
+#p8:Nested Functions
+def operation(a,b):
+    def add():
+        return a+b
+    def sub():
+        return a-b
+    print("Sum :",add())
+    print("Difference:",sub())
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+operation(a,b)
+O/P:
+enter the value of a: 12
+enter the value of b: 8
+Sum : 20
+Difference: 4
+
+#p9:Super factorial
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    return n*fact(n-1)
+def sfact(n):
+    if n==1:
+        return 1
+    return fact(n)*sfact(n-1)
+num=int(input("enter num:"))
+print("factorial",sfact(num))
+
+
+
+
+
+
+
+
+
+
+
+
 
